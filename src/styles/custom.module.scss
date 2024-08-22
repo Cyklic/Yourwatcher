@@ -1,0 +1,37 @@
+.signContainer {
+  border: 1px dashed #ced4da;
+  width: 100%;
+  height: 120px;
+  margin-top: 3px;
+}
+.memoSignContainer {
+  border: 1px dashed #ced4da;
+  width: 100%;
+  height: 70px;
+}
+
+.memoSignContainerTwo {
+  border: 1px dashed #ced4da;
+  width: 100%;
+  height: 200px;
+}
+
+.custom_typograph {
+  padding-left: 0px !important;
+  margin-bottom: 4px !important;
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.custom_typograph_reply {
+  padding-left: 20px !important;
+  margin-bottom: 0px !important;
+
+  p {
+    margin-bottom: 0px !important;
+  }
+}

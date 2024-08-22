@@ -1,0 +1,34 @@
+.calendar_container {
+  width: 100%;
+  font-size: 14px;
+  height: calc(100vh - 300px);
+  border: "1px solid red";
+  // overflow: scroll;
+
+  .calendarElement {
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    color: #00a46c;
+
+    font-family: "DM Sans";
+    font-size: 15px;
+
+    background-color: #be1818;
+
+    div:last-of-type {
+      width: 100%;
+
+      button {
+        height: 10vh;
+        border-bottom: 0.395134px solid #94a3b8;
+
+        span {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

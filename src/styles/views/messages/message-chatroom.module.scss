@@ -1,0 +1,123 @@
+
+
+.chatroom_container {
+  // min-height: calc(100vh - 140px); // 140px is the height of the header
+  width: 100%;
+  //   max-width: 320px;
+  //   min-width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #e2e6ee;
+  border-top: 1px solid #e2e6ee;
+  border-bottom: 1px solid #e2e6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .chatroom {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow: hidden;
+
+    .chatroom_body {
+      overflow-y: scroll;
+
+      .chat_body {
+        border-bottom: 1px solid #e2e6ee;
+        .chat {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 13.5px 10px;
+
+          cursor: pointer;
+
+          .user_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .user_avatar {
+              display: flex;
+              align-items: center;
+              img {
+                border-radius: 50%;
+              }
+              .user_name {
+                // background-color: #f4f4f4;
+                padding: 0px 8px;
+
+                h5 {
+                  font-size: 13px;
+                  font-family: "DM Sans";
+                  margin: 0;
+                }
+              }
+            }
+            p {
+              font-size: 10.5px;
+              font-family: "DM Sans";
+              letter-spacing: 0.06em;
+              color: #4b4b4b;
+              margin: 0;
+            }
+          }
+
+          .chat_message {
+            margin-top: 10px;
+
+            span {
+              font-size: 12px;
+              font-family: "DM Sans";
+              letter-spacing: 0.06em;
+              color: #4b4b4b;
+            }
+          }
+
+          .chat_message_short {
+            height: 20px;
+            overflow: hidden;
+            margin-top: 10px;
+
+            span {
+              font-size: 12px;
+              font-family: "DM Sans";
+              letter-spacing: 0.06em;
+              color: #4b4b4b;
+            }
+          }
+        }
+
+        .chat_btn {
+          margin: 5px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          button {
+            width: 100px;
+            border-radius: 0;
+            font-size: 12px;
+            font-family: "DM Sans";
+          }
+        }
+      }
+    }
+  }
+
+  .message_section {
+    padding: 12px 10px;
+
+    .card_footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        min-width: 100px;
+        border-radius: 0;
+        font-size: 12px;
+        font-family: "DM Sans";
+      }
+    }
+  }
+}

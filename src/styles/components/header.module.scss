@@ -1,0 +1,28 @@
+.header {
+  padding: 0 15px;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+
+  .search_text {
+    border: none;
+    outline: none;
+  }
+}
+
+.icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-right: 20px;
+
+  .icon_size {
+    width: 16px;
+    height: 22px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,306 @@
+.sidebar {
+  // min-height: calc(100vh - 140px); // 140px is the height of the header
+  width: 100%;
+  max-width: 320px;
+  min-width: 320px;
+  background-color: #fff;
+  border: 1px solid #e2e6ee;
+
+  .cta_container {
+    height: 55px;
+    background-color: #f7f9fd;
+    // border-bottom: 1px solid #e2e6ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: block;
+      width: 100%;
+
+      .cta {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        font-family: "DM Sans";
+        width: 100%;
+
+        svg {
+          width: 18px;
+          margin-right: 10px;
+        }
+
+        span {
+          flex: unset;
+        }
+      }
+    }
+  }
+
+  .sidebar_message_con {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    .message_header {
+      margin-top: 20px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      p {
+        font-size: 16px;
+        font-family: "DM Sans";
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        color: #000;
+      }
+      .search_header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .search_form {
+          max-width: 100%;
+
+          form {
+            position: relative;
+
+            .full_width {
+              width: 290px;
+            }
+
+            .search_icon {
+              position: absolute;
+              right: 10px;
+              top: 6px;
+            }
+
+            span {
+              svg {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                color: #717171;
+              }
+            }
+          }
+        }
+
+        .add_new_btn {
+          position: relative;
+          button {
+            width: 100px;
+            height: 32px;
+            border-radius: 0;
+            font-size: 12px;
+            font-family: "DM Sans";
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-radius: 2px;
+            // justify-content: space-between;
+
+            .add_new_text {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+
+              span:nth-child(1) {
+                font-size: 16px;
+              }
+            }
+
+            svg {
+              width: 12px;
+              height: 12px;
+              // margin-right: 5px;
+            }
+          }
+
+          .add_new_dropdown {
+            position: absolute;
+            right: 0;
+            top: 40px;
+            background-color: #ffffff;
+            border-radius: 2px;
+            width: 220px;
+            height: 55px;
+            padding: 8px 14px;
+            border: 1px solid #e0e0e0;
+
+            ul {
+              list-style: none;
+
+              li {
+                font-size: 12px;
+                font-family: "DM Sans";
+                font-weight: 500;
+                color: #000;
+                padding: 6px 0;
+                cursor: pointer;
+
+                span {
+                  color: #fff;
+                  background-color: #00a46c;
+                  padding: 2px, 4px, 2px, 4px;
+                  font-size: 12px;
+                  font-weight: 400;
+                  font-family: "DM Sans";
+                  margin-left: 5px;
+                  width: 40px;
+                  height: 20px;
+                }
+              }
+              li:nth-child(1) {
+                // border-bottom: 1px solid #e0e0e0;
+                // margin-bottom: 10px;
+              }
+            }
+          }
+        }
+
+        .dropdown_custom {
+          background-color: #00a46c !important;
+          color: #fff !important;
+          // border: 1px solid #40845f;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .no_chat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        width: 200px;
+        height: 32px;
+        border-radius: 0;
+        font-size: 12px;
+        font-family: "DM Sans";
+      }
+    }
+
+    .active {
+      background-color: #f7f9fd !important;
+    }
+  }
+}
+
+.user_card {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 250px);
+  // min-height: 100vh;
+  overflow-y: scroll;
+  // align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  .user_body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 0 14px;
+    // border-bottom: 1px solid #e2e6ee;
+    background-color: #f1f3f9;
+  }
+  .avatar {
+    height: 40px;
+    max-width: 40px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #dde1ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  .user_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      font-family: "DM Sans";
+      font-weight: 500;
+    }
+    .time {
+      font-size: 10px;
+      font-family: "DM Sans";
+      font-weight: 400;
+      color: #717171;
+    }
+  }
+
+  .active_body {
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+  }
+}
+
+.chathead_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background-color: #f1f3f9;
+  margin: 20px 0px;
+  padding: 0px 0px;
+
+  .user_body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    // padding-top: 10px;
+    padding-bottom: 20px;
+    // padding: 10px 0px;
+    border-bottom: 1px solid #e2e6ee;
+    margin: 0px 20px;
+    width: 100%;
+
+    .avatar {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: #e2e6ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+    span {
+      color: #000000;
+      font-size: 16px;
+      font-family: "DM Sans";
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .chathead_date {
+    display: flex;
+    gap: 10px;
+
+    span {
+      color: #4b4b4b;
+      font-size: 12px;
+      font-family: "DM Sans";
+      font-weight: 400;
+    }
+  }
+}

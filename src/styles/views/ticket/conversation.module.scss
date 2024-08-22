@@ -1,0 +1,29 @@
+.container{
+  max-height: calc(100vh - 250px);
+  min-height: calc(100vh - 250px);
+  overflow-y: auto;
+  border-right: 1px solid #dbdbdb;
+}
+
+.message {
+  position: relative;
+  background-color: #f6f6f6;
+  
+  &:after {
+    bottom: 100%;
+    left: 3%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #f8f8f8;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+}
+
+.my-message {
+  background: #edecec;
+}

@@ -1,0 +1,19 @@
+.container {
+  padding-top: 50px !important;
+  font-family: "DM Sans";
+
+  .files {
+    // min-height: calc(100vh - 60px);
+    display: flex;
+    overflow: hidden !important;
+
+    .sidebar {
+      // min-height: 100%;
+      width: 19vw;
+      max-width: 300px;
+      min-width: 240px;
+      background-color: #fff;
+      border: 1px solid #e2e6ee;
+    }
+  }
+}

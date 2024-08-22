@@ -1,0 +1,329 @@
+.modal_full_height {
+  min-height: 100vh !important;
+}
+.contanier {
+  padding: 20px;
+  min-height: 100vh !important;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "DM Sans";
+    h5 {
+      font-size: 24px;
+    }
+
+    .close_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background-color: #f1f3f9;
+      color: #717171;
+    }
+  }
+  .sidebar {
+    background-color: #fff;
+    // border: 1px solid #e2e6ee;
+    height: 100%;
+    margin-top: 20px;
+
+    .sidebar_bio {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      border-bottom: 1px solid #cacaca;
+
+      img {
+        border-radius: 5%;
+        width: 150px;
+      }
+
+      h5 {
+        max-width: 90%;
+        display: flex;
+        margin-top: 10px;
+        gap: 7px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .sidebar_others {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+
+      div {
+        display: flex;
+        margin-bottom: 10px;
+
+        svg {
+          width: 18px;
+          margin-right: 10px;
+        }
+      }
+
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .cta_container {
+      height: 55px;
+      background-color: #f7f9fd;
+      // border-bottom: 1px solid #e2e6ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        display: block;
+        width: 100%;
+
+        .cta {
+          display: flex;
+          justify-content: center;
+          font-size: 13px;
+          font-family: "DM Sans";
+          width: 100%;
+
+          svg {
+            width: 18px;
+            margin-right: 10px;
+          }
+
+          span {
+            flex: unset;
+          }
+        }
+      }
+    }
+
+    input {
+      border: 1px solid #e2e6ee;
+
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+
+    .tree_label_icon {
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+
+    .treeContainer {
+      list-style: none;
+      padding: 0;
+    }
+
+    .treeNode {
+      padding-left: 0px;
+      transition: rotate 0.3s ease-out;
+
+      svg {
+        width: 20px;
+      }
+
+      .profile_dropdown {
+        // position: absolute;
+        top: 100%;
+        right: 0;
+        margin-top: 20px;
+        min-height: 100px;
+        width: 200px;
+        box-shadow: 0px 3px 8px rgb(73 79 89 / 5%),
+          0px 0px 4px rgb(73 79 89 / 8%);
+        // padding: 20px 0;
+        background-color: #fff;
+
+        .profile_dropdown_group {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          border-bottom: 1px solid #f0f3f9;
+          padding: 10px 15px;
+
+          .profile_item {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            gap: 10px;
+
+            svg {
+              width: 15px;
+            }
+
+            span {
+              font-size: 12px;
+            }
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .treeNodeParent {
+        padding: 5px 0;
+        cursor: pointer;
+      }
+
+      .treeNodeActive {
+        background-color: #f0f3fa;
+
+        span {
+          color: #484c53;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .label {
+      font-size: 12px;
+      color: #484c53;
+    }
+
+    .treeToggler {
+      transform: rotate(45deg);
+    }
+
+    .treeIcon {
+      margin-right: 10px;
+    }
+
+    .noChild {
+      margin-right: 5px;
+    }
+
+    .childNode {
+      padding-left: 20px;
+    }
+
+    .tags {
+      margin-top: 30px;
+
+      h6 {
+        color: #969fae;
+        font-weight: 200;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: "DM Sans";
+      }
+
+      .tags_list {
+        .tag {
+          display: flex;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          svg {
+            width: 20px;
+            margin-right: 10px;
+          }
+
+          span {
+            text-transform: capitalize;
+            font-size: 12px;
+          }
+        }
+        .tag_active {
+          background-color: #f0f3fa;
+          display: flex;
+          margin-bottom: 10px;
+          cursor: pointer;
+          padding: 5px;
+
+          svg {
+            width: 20px;
+            margin-right: 10px;
+          }
+
+          span {
+            color: #484c53;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+
+  .add_container {
+    padding: 10px 10px;
+    .add_card_icon {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      .add_icon {
+        width: 13px;
+      }
+      span {
+        font-family: "DM Sans";
+        font-size: 12px;
+      }
+    }
+
+    .add_form {
+      margin-top: 10px;
+      box-shadow: 0px 8px 32px rgb(31 34 38 / 12%),
+        0px 2px 6px rgb(31 34 38 / 8%);
+      padding: 10px 10px 10px 10px;
+
+      .add_form_dir {
+        span {
+          font-size: 10px;
+          color: #969fae;
+
+          .add_form_dir_name {
+            color: green;
+          }
+        }
+      }
+
+      .label,
+      .add_btn {
+        font-family: "DM Sans";
+        font-size: 12px;
+      }
+      button {
+        font-size: 12px;
+      }
+      .add_btn_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // .tag_active {
+  //   background-color: #f0f3fa;
+
+  //   svg {
+  //     width: 20px;
+  //     margin-right: 10px;
+  //   }
+
+  //   span {
+  //     color: #484c53;
+  //     font-weight: bold;
+  //   }
+  // }
+}
