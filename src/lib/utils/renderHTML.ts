@@ -1,8 +1,8 @@
-import { Remarkable } from "remarkable";
+// import { Remarkable } from "remarkable";
 
-const md = new Remarkable({ html: true });
+// const md = new Remarkable({ html: true });
 
-export function renderToHTML(markdown: string) {
-  const renderedHTML = md.render(markdown);
-  return { __html: renderedHTML };
-}
+// export function renderToHTML(markdown: string) {
+//   const renderedHTML = md.render(markdown);
+//   return { __html: renderedHTML };
+// }
