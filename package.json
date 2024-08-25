@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@am-hooks/use-notification": "^1.0.0",
     "@mantine/carousel": "^7.5.1",
     "@mantine/charts": "^7.5.1",
     "@mantine/code-highlight": "^7.5.1",
