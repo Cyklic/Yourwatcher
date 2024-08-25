@@ -1,6 +1,7 @@
 "use client";
 
 import useNotification from "@/lib/hooks/useNotification";
+import "@/styles/globals.scss";
 import { CiLock } from "react-icons/ci";
 import { FaRegEnvelope } from "react-icons/fa";
 import { useRouter } from "next/navigation";

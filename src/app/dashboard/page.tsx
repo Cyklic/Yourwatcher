@@ -1,6 +1,7 @@
 "use client";
 
 import withLayout from "@/layouts/appLayout";
+import "@/styles/globals.scss";
 import { Box, Container, Stack, Tabs, Text } from "@mantine/core";
 import React from "react";
 import AccountTab from "./accoutTab";
