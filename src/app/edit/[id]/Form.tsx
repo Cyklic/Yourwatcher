@@ -1,6 +1,6 @@
 "use client";
 
-// import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 import {
   Box,
   Button,
@@ -26,7 +26,7 @@ const schema = z.object({
 });
 
 export default function Form({ data }: Props) {
-  // const { handleSuccess, handleError } = useNotification();
+  const { handleSuccess, handleError } = useNotification();
   const { push } = useRouter();
   const [visible, setVisible] = useState(false);
   const form = useForm({
@@ -47,7 +47,7 @@ export default function Form({ data }: Props) {
           body: form.values.body,
         }
       );
-      // handleSuccess("Post updated", "Post updated successfully");
+      handleSuccess("Post updated", "Post updated successfully");
       push(`/${data.id}`);
     } catch (error) {
     } finally {
