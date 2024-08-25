@@ -1,6 +1,6 @@
 "use client";
 
-import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 
 type Props = {
   status: number;
