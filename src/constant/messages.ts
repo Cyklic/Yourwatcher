@@ -1,4 +1,4 @@
-import { Message } from "@/interface";
+import { Message } from "@/lib/interface";
 
 export const messages: Message[] = [
   {
