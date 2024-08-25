@@ -1,4 +1,4 @@
-import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 import {
   Box,
   Button,

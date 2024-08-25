@@ -12,13 +12,13 @@ import { Dropzone, DropzoneProps, MIME_TYPES } from "@mantine/dropzone";
 import { Dispatch, MouseEvent, SetStateAction, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 import { core } from "@/constant/url";
 
 interface Props extends Partial<DropzoneProps> {
   // setFileURLS: Dispatch<SetStateAction<string[]>>;
-  file?: { file_name: string, file_url: string };
-  update: (track: number, url: { file_name: string, file_url: string }) => void;
+  file?: { file_name: string; file_url: string };
+  update: (track: number, url: { file_name: string; file_url: string }) => void;
   onDelete?: (index: number) => void;
   track: number;
 }
@@ -70,11 +70,14 @@ export function FileUpload({
     }
   };
 
-  const isImageUrl = (url: { file_name: string, file_url: string }): boolean => {
+  const isImageUrl = (url: {
+    file_name: string;
+    file_url: string;
+  }): boolean => {
     const imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".svg"];
     // Check if the URL ends with any of the image extensions
 
-    console.log({ url })
+    console.log({ url });
     return imageExtensions.some((ext) => url.file_url.endsWith(ext));
   };
 
@@ -161,7 +164,7 @@ export function FileUpload({
         {file ? (
           renderImagePreview()
         ) : (
-            <Card h="100%" w={{ base: 250, md: 600 }}>
+          <Card h="100%" w={{ base: 250, md: 600 }}>
             <Stack gap={5} align="center" justify="center" h="100%">
               <IconFileUpload color="#046F7B" />
               <Text fz={10} fw={900} c="#046F7B">

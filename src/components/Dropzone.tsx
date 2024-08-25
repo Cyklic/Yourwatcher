@@ -19,7 +19,7 @@ import {
 } from "@mantine/dropzone";
 import { useState } from "react";
 
-import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 import { core } from "@/constant/url";
 import Cookies from "js-cookie";
 import { IconCloudUpload, IconFile } from "@tabler/icons-react";

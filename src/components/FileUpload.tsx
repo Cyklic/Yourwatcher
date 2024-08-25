@@ -14,7 +14,7 @@ import { Dispatch, MouseEvent, SetStateAction, useState } from "react";
 import { core, liaisonUrl } from "@/constant/url";
 import axios from "axios";
 import Cookies from "js-cookie";
-import useNotification from "@/hooks/useNotification";
+import useNotification from "@/lib/hooks/useNotification";
 import { LoaderComponent } from "./ImageLoader";
 
 interface Props extends Partial<DropzoneProps> {

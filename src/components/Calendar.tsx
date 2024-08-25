@@ -17,10 +17,10 @@ dayjs.extend(isToday);
 
 import { PropsWithChildren, useEffect, useState } from "react";
 import clsx from "clsx";
-import { getMonthDays } from "@/utils/getWeekDays";
+import { getMonthDays } from "@/lib/utils/getWeekDays";
 
 import axios from "axios";
-import { GoogleHoliday } from "@/interface/holidays";
+import { GoogleHoliday } from "@/lib/interface/holidays";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import Cookies from "js-cookie";
 
