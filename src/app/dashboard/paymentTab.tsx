@@ -162,7 +162,7 @@ const PaymentTab = () => {
             <Tabs.Tab value="disburseFunds">Disburse Funds</Tabs.Tab>
           </Tabs.List>
           <Tabs.Panel value="requestPayout">
-            <Box>
+            <Box component="form" onSubmit={handleRequestSubmit}>
               <Stack>
                 <Group justify="space-between" gap="sm" grow my={"10px"}>
                   <TextInput
@@ -266,7 +266,7 @@ const PaymentTab = () => {
             </Box>
           </Tabs.Panel>
           <Tabs.Panel value="disburseFunds">
-            <Box>
+            <Box component="form" onSubmit={handleDisburseSubmit}>
               <Stack>
                 <TextInput
                   my={"5px"}

@@ -187,7 +187,7 @@ const AccoutTab = () => {
             <Tabs.Tab value="corporateAccount">Corporate Account</Tabs.Tab>
           </Tabs.List>
           <Tabs.Panel value="userAccount">
-            <Box>
+            <Box component="form" onSubmit={handleUserSubmit}>
               <Stack>
                 <Group justify="space-between" gap="sm" grow my={"10px"}>
                   <TextInput
@@ -284,7 +284,7 @@ const AccoutTab = () => {
             </Box>
           </Tabs.Panel>
           <Tabs.Panel value="corporateAccount">
-            <Box>
+            <Box component="form" onSubmit={handleCorporateSubmit}>
               <Stack>
                 <Group justify="space-between" gap="sm" grow my={"10px"}>
                   <Select
